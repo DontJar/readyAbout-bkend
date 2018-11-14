@@ -7,7 +7,7 @@ class TripsController < ApplicationController
   end
 
   def create
-      @trip = Trip.create(project_params)
+      @trip = Trip.create(trip_params)
       if @boat.save
         render json: @trip, status: :accepted
       else

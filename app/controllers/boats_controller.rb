@@ -7,7 +7,7 @@ class BoatsController < ApplicationController
   end
 
   def create
-      @boat = Boat.create(project_params)
+      @boat = Boat.create(boat_params)
       if @boat.save
         render json: @boat, status: :accepted
       else

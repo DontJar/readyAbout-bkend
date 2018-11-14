@@ -7,7 +7,7 @@ class LogsController < ApplicationController
   end
 
   def create
-      @log = Log.create(project_params)
+      @log = Log.create(logs_params)
       if @log.save
         render json: @log, status: :accepted
       else

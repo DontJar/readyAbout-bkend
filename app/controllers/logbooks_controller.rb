@@ -7,7 +7,7 @@ class LogbooksController < ApplicationController
   end
 
   def create
-      @logbook = Logbook.create(project_params)
+      @logbook = Logbook.create(logbook_params)
       if @logbook.save
         render json: @logbook, status: :accepted
       else
