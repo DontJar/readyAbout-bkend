@@ -18,6 +18,9 @@ gem 'puma', '~> 3.11'
 
 gem 'active_model_serializers'
 
+gem "omniauth-google-oauth2"
+gem 'devise_token_auth'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
